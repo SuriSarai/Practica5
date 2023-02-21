@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="description" content="PQG">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style>
+body{background:hsla(140, 85%, 47%, 0.336);
+    margin:0
+}
+.form{
+    /*cuadro de texto*/
+    width:440px;
+    height:890px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c
+}
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;font-size:14px;
+    color:#5a5a5a
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#FFDAB9;
+    color:#fff
+}
+div{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+span{
+    margin:0 5px 0 15px
+}
+
+</style>
+  </head>
+  <body>
+    <form class="form">
+        <h2>Contactanos!!</h2>
+        <p type="Nombre:"><input placeholder="Escribe tu nombre aquí.."></input></p>
+        <p type="Apellidos:"><input placeholder="Escribe tus apellidos aquí.."></input></p>
+        <br> <radiogroup>
+              <label for="promociones">Sexo:</label> <br>
+                 <input type="radio" id="sexo" name="sexo" value="hombre" autofocus checked> Hombre<br>
+                 <input type="radio" id="sexo" name="sexo" value="mujer"> Mujer<br>
+                 <input type="radio" id="sexo" name="sexo" value="otro"> Otro<br>
+             </radiogroup><br>
+             <fieldset>
+                  <legend>Población:</legend>
+                  <select class="poblacion" name="poblacion">
+                      <option value="orizaba" selected>Orizaba</option>
+                      <option value="cordoba">Córdoba</option>
+                      <option value="xalapa">Xalapa</option>
+                      <option value="veracruz">Veracruz</option>
+
+                  </select>
+              </fieldset>
+           <input type="checkbox" value="Deseo recibir información sobre novedades y ofertas" checked>Deseo recibir información <br>sobre novedades y ofertas <br>
+           <input type="checkbox" value="Aceptar condiciones" checked>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos<br>
+           <input type="checkbox" value="Ofertas" checked>Deseo recibir información sobre novedades y ofertas<br>
+        <p type="Email:"><input placeholder="Email para que te contactemos.."></input></p>
+        <p type="Mensage:"><input placeholder="Que deseas saber.."></input></p>
+        <button>Enviar</button>
+        <div>
+          <span ></span>001 1023 567
+          <span ></span> contact@gmail.com
+        </div>
+      </form>
+  </body>
+</html>
